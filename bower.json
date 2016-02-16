@@ -1,0 +1,22 @@
+{
+  "name": "bizsiteresponsive",
+  "description": "responsive site",
+  "main": "index.js",
+  "authors": [
+    "mainak <mailtomainak@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mailtomainak/htmlExercise_Responsive",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6"
+  }
+}

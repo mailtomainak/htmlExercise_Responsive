@@ -11,16 +11,18 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Germania+One);
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-
 body {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -245,13 +247,30 @@ textarea {
     text-align: center;
 }
 .green_large {
-    font-size: 5em;
-  }
+  font-size: 2em;
+  background-color: #00ff00;
+}
+.amber_large {
+    font-size: 2em;
+    background-color: #FFC200;
+}
+.red_large{
+  font-size: 2em;
+  background-color: #ff0000;
+}
+.circle {
+    border-radius: 50px;
+    height: 60px;
+    text-align: center;
+    color: #fff;
+    /* width and height can be anything, as long as they're equal */
+}
+.circle span{
+  vertical-align:sub;
+}
 section {
     margin: 1em;
 }
-
-
 ul.menu {
     list-style-type: none;
     margin: 0;
@@ -259,11 +278,9 @@ ul.menu {
     overflow: hidden;
     background-color: #333;
 }
-
 .menu li {
     float: left;
 }
-
 .menu li a {
     display: block;
     color: white;
@@ -273,6 +290,7 @@ ul.menu {
 }
 
 /* Styling for social Share start */
+
 ul.socialicons {
     list-style: none;
     overflow: auto;
@@ -289,21 +307,80 @@ ul.socialicons li a {
     display: block;
     background: url(../../img/social_share.png) no-repeat;
 }
-
-
-ul.socialicons li a.rss { background-position: 0px 0px; }
-ul.socialicons li a.facebook { background-position: 0px -32px; }
-ul.socialicons li a.linkedin { background-position: 0px -64px; }
-ul.socialicons li a.tonly { background-position: 0px -96px; }
-ul.socialicons li a.twitter { background-position: 0px -128px; }
-ul.socialicons li a.wordpress { background-position: 0px -192px; }
-
-
-#infoText p first-line{
-  font-weight: bold;
+ul.socialicons li a.rss {
+    background-position: 0px 0px;
 }
+ul.socialicons li a.facebook {
+    background-position: 0px -32px;
+}
+ul.socialicons li a.linkedin {
+    background-position: 0px -64px;
+}
+ul.socialicons li a.tonly {
+    background-position: 0px -96px;
+}
+ul.socialicons li a.twitter {
+    background-position: 0px -128px;
+}
+ul.socialicons li a.wordpress {
+    background-position: 0px -192px;
+}
+#infoText p first-line {
+    font-weight: bold;
+}
+
 /*section{
   border-width: 0.1em;
   border-style: solid;
 }*/
+
+
 /* Styling for social Share end */
+
+.grey_bg {
+    background-color: #d3d3d3;
+}
+.black_bg {
+    background-color: #000;
+}
+.white_text{
+  color: #fff;
+}
+.hero_image {
+    position: relative;
+    width: 100%;
+}
+.hero_text {
+    position: absolute;
+    left: 10px;
+    top: 500px;
+    width: 100%;
+    font-size: 20px;
+}
+.hero_text span {
+    color: white;
+    font: bold 24px/45px;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+.footer_links{
+  list-style: none;
+  overflow: auto;
+}
+
+.footer_links a{
+  text-decoration: none;
+  font-size: 80%;
+  color: #fff;
+}
+.no_margin{
+  margin: 0px;
+}
+.section_info::first-line,.grid_3 p,.grid_12 p{
+  font-family: 'Germania One', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
